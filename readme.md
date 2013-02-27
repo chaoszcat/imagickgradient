@@ -14,8 +14,9 @@ steps is out of scope here. Google it, should have a lot of resources.
 Example
 ------------
 
-Example gradient:
 ![ScreenShot](https://raw.github.com/chaoszcat/imagickgradient/master/example.gif)<br>
+
+To draw it:
 
     $gradient->width(8)
              ->draw();
