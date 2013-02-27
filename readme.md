@@ -18,6 +18,7 @@ Example
 
 To draw it:
 
+    $gradient = new Gradient();
     $gradient->width(8)
              ->draw();
 
