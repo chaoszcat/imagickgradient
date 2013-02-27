@@ -78,7 +78,7 @@ class Gradient {
 	 * 
 	 * @param type $name
 	 * @param type $arguments
-	 * @return null|Button
+	 * @return null|Gradient
 	 */
 	public function __call($name, $arguments) {
 		if (empty($arguments)) {
@@ -113,7 +113,7 @@ class Gradient {
 		$background->popPattern();
 
 		/* Set the gradient color.
-		Changing this value changes the color of the button */
+		Changing this value changes the color of the gradient */
 		$background->setFillPatternURL('#gradient');
 		//Weird here. Need to reduce 1px down for some strange reason.
 		$background->rectangle(0, 0, $this->width(), $this->height());
@@ -208,14 +208,14 @@ class Gradient {
 	}
 	
 	/**
-	 * Draw the button on screen, or into a file specified
+	 * Draw the gradient on screen, or into a file specified
 	 */
 	public function draw($file=null) {
 		
 		//Start the fun!
 		$this->final = new Imagick();
 		
-		//We want to block button which is ridiculously big
+		//We want to block gradient which is ridiculously big
 		if ($this->width() > $this->maxWidth) {
 			$this->width($this->maxWidth);
 		}
