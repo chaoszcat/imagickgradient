@@ -15,7 +15,8 @@ Example
 ------------
 
 Example gradient:
-![ScreenShot](https://raw.github.com/chaoszcat/imagickgradient/master/example.gif)
+![ScreenShot](https://raw.github.com/chaoszcat/imagickgradient/master/example.gif)<br>
+
     $gradient->width(8)
              ->draw();
 
